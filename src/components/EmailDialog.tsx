@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { sendResultsByEmail } from "../utils/exportService";
 import { EOQInputs, EOQResults } from "../utils/eoqCalculator";
-import { Email } from "lucide-react";
+import { Mail } from "lucide-react";
 
 interface EmailDialogProps {
   inputs: EOQInputs;
@@ -45,7 +45,7 @@ const EmailDialog: React.FC<EmailDialogProps> = ({ inputs, results }) => {
           variant="outline" 
           className="flex items-center gap-2 bg-white text-eco-text border-eco-secondary/50 hover:bg-eco-secondary/10"
         >
-          <Email className="h-4 w-4" />
+          <Mail className="h-4 w-4" />
           Email Results
         </Button>
       </DialogTrigger>
